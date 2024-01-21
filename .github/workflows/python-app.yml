@@ -16,6 +16,7 @@ jobs:
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
+        pip install -r requirements.txt
     
     - name: Run tests
       run: |
@@ -28,5 +29,4 @@ jobs:
       run: docker run python-hello-world
 
     - name: Lint with Flake8
-      run: |
-        flake8 main.py --exit-zero
+      run: flake8 main.py --exit-zero
