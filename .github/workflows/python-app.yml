@@ -23,10 +23,10 @@ jobs:
         python -m unittest discover -s tests
       
     - name: Build Docker Image
-      run: docker build -t python-hello-world .
+      run: docker build -t ml-iris .
 
     - name: Run Docker Container
-      run: docker run python-hello-world
+      run: docker run ml-iris
 
     - name: Lint with Flake8
-      run: flake8 main.py --exit-zero
+      run: flake8 machine_learning_iris/main.py --exit-zero

@@ -4,4 +4,4 @@ WORKDIR /app
 
 COPY . /app/
 
-CMD ["python", "./main.py"]
+CMD ["python", "./machine_learning_iris/main.py"]
