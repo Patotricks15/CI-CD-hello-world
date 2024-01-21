@@ -26,3 +26,7 @@ jobs:
 
     - name: Run Docker Container
       run: docker run python-hello-world
+
+    - name: Lint with Flake8
+      run: |
+        flake8 main.py --exit-zero
