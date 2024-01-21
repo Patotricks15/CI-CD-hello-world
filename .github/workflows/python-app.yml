@@ -15,4 +15,8 @@ jobs:
         python-version: '3.x'
     - name: Install dependencies
       run: |
-        python main.py
+        python -m pip install --upgrade pip
+    
+    - name: Run tests
+      run: |
+        python -m unittest discover
